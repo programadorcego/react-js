@@ -4,18 +4,19 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 
 const App = () => {
-    const user = {
-        name: "Willian",
-        lastname: "Pereira",
-        age: 34,
-    };
-    return (
+    let logado = false;
+    /*let content;
+
+    if(logado) {
+        content = <Header />
+    } else {
+        content = <Footer />
+    }*/
+    
+    //let content = logado ? <Header /> : <Footer />
+        return (
         <>
-        <Header />
-        <div>
-            <p>Olá, meu nome é {user.name} {user.lastname} e tenho {user.age} anos.</p>
-        </div>
-        <Footer />
+{logado && (<Header />)}
         </>
     );
 }
