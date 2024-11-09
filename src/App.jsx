@@ -1,11 +1,17 @@
 import React from "react";
 
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+
 const App = () => {
     return (
+        <>
+        <Header />
         <div>
-            <p>Olá universo!</p>
-            <p>Meu primeiro componente.</p>
+            <p>Conteúdo</p>
         </div>
+        <Footer />
+        </>
     );
 }
 
