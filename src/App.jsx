@@ -21,14 +21,16 @@ const App = () => {
         );
     });
 
+    const estilo = {margin: 0, padding: 0, backgroundColor: '#000', color: '#fff', width: '100%', height: '100%'};
+
     return (
-        <>
+        <div style={estilo}>
 <h1>Listas</h1>
 
 <ul>
     {items}
 </ul>
-        </>
+        </div>
     );
 }
 
