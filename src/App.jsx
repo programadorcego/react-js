@@ -1,22 +1,33 @@
 import React from "react";
 
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
-
 const App = () => {
-    let logado = false;
-    /*let content;
+    const products = [
+        {
+            id: 1,
+            name: "Produto 1"
+        },
+        {
+            id: 2,
+            name: "Produto 2"
+        }, {
+            id: 3,
+            name: "Produto 3"
+        }
+    ];
 
-    if(logado) {
-        content = <Header />
-    } else {
-        content = <Footer />
-    }*/
-    
-    //let content = logado ? <Header /> : <Footer />
+    const items = products.map(product => {
         return (
+            <li key={product.id}>{product.name}</li>
+        );
+    });
+
+    return (
         <>
-{logado && (<Header />)}
+<h1>Listas</h1>
+
+<ul>
+    {items}
+</ul>
         </>
     );
 }
