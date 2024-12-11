@@ -1,5 +1,5 @@
 import React from "react";
-import "./app.css";
+import styles from "./app.module.css";
 
 const App = () => {
     const products = [
@@ -23,7 +23,7 @@ const App = () => {
     });
 
     return (
-        <div className="container">
+        <div className={styles.container}>
 <h1>Listas</h1>
 
 <ul>
